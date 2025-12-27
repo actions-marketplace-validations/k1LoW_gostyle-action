@@ -117,7 +117,7 @@ runs:
       id: reviewdog-failonerror
       if: inputs.use-reviewdog != 'false' && inputs.fail-on-error != 'false'
       run: |
-        echo 'FAILONERROR=-fail-on-error' >> "$GITHUB_OUTPUT"
+        echo 'FAILONERROR=-fail-level=any' >> "$GITHUB_OUTPUT"
       shell: bash
     - name: Run gostyle
       run: (go vet -vettool=`which gostyle` ${{ steps.flags.outputs.FLAGS }} ${{ inputs.go-package }} ${{ steps.failonerror.outputs.FAILONERROR }}) ${{ steps.pipe.outputs.PIPE }} ${{ steps.reviewdog-failonerror.outputs.FAILONERROR }}
