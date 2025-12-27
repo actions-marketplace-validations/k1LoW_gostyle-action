@@ -1,5 +1,14 @@
 # Changelog
 
+## [v1.5.1](https://github.com/k1LoW/gostyle-action/compare/v1.5.0...v1.5.1) - 2025-12-27
+### Fix bug 🐛
+- fix: replace deprecated -fail-on-error with -fail-level=any by @k1LoW in https://github.com/k1LoW/gostyle-action/pull/27
+### Other Changes
+- chore(deps): bump Songmu/tagpr from 1.8.4 to 1.9.0 in the dependencies group by @dependabot[bot] in https://github.com/k1LoW/gostyle-action/pull/20
+- chore(deps): bump the dependencies group across 1 directory with 3 updates by @dependabot[bot] in https://github.com/k1LoW/gostyle-action/pull/25
+- chore(deps): bump Songmu/tagpr from 1.9.0 to 1.10.0 in the dependencies group by @dependabot[bot] in https://github.com/k1LoW/gostyle-action/pull/26
+- chore: setup tagpr labels by @k1LoW in https://github.com/k1LoW/gostyle-action/pull/22
+
 ## [v1.5.0](https://github.com/k1LoW/gostyle-action/compare/v1.4.2...v1.5.0) - 2025-09-14
 ### Other Changes
 - fix: update reviewdog installation to use action-setup by @k1LoW in https://github.com/k1LoW/gostyle-action/pull/18
